@@ -1,0 +1,366 @@
+html, body, .container{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 1280px;
+    height: 890px;
+    background: #F0F0F0 0% 0% no-repeat padding-box;
+};
+
+* {
+    position: relative;
+};
+
+
+.title {
+    top: 40px;
+    left: 85px;
+    width: 240px;
+    height: 59px;
+    margin: 0;
+    font: Bold 40px/60px Noto, Sans, CJK, TC;
+    text-align: left;
+    letter-spacing: 0;
+    color: #000000;
+};
+
+.title-eng {
+    position: absolute;
+    top: 40px;
+    left: 336px;
+    width: 99px;
+    height: 59px;
+    margin: 0;
+    text-align: left;
+    font: Bold 40px/60px Noto, Sans, CJK, TC;
+    letter-spacing: 0;
+    color: #000000;
+};
+
+.aqi-intro {
+    position: absolute;
+    top: 53px;
+    left: 465px;
+    border: 3px solid #000000;
+    box-sizing: border-box;
+    border-collapse: collapse;
+
+    th, td {
+        width: 122px;
+        padding: 0;
+        border: 3px solid #000000;
+        box-sizing: border-box;
+
+    };
+
+    th {
+        height: 54px;
+    };
+
+    td {
+        height: 56px;
+        text-align: center;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+    };
+
+};
+
+.aqi-level-0 {
+    background: #95F084 0% 0% no-repeat padding-box;
+};
+.aqi-level-1 {
+    background: #FFE695 0% 0% no-repeat padding-box;
+};
+.aqi-level-2 {
+    background: #FFAF6A 0% 0% no-repeat padding-box;
+};
+.aqi-level-3 {
+    background: #FF5757 0% 0% no-repeat padding-box;
+};
+.aqi-level-4 {
+    background: #9777FF 0% 0% no-repeat padding-box;
+};
+.aqi-level-5 {
+    background: #AD1774 0% 0% no-repeat padding-box;
+};
+
+
+.countys-toggle {
+    position: absolute;
+    top: 107px;
+    left: 85px;
+    border: 3px solid #000000;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    cursor: pointer;
+
+    .countys {
+        width: 350px;
+        margin: 0;
+        padding: 0;
+        z-index: 10;
+    }
+
+    .default-county {
+
+        span {
+            position: absolute;
+            font-size: 3px;
+            left: 322px;
+    
+        };
+    
+        .tri-top {
+            top: 12px;
+        };
+    
+        .tri-bot {
+            bottom: 12px;
+        };
+    };
+    
+    .county, .default-county{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        width: 350px;
+        height: 56px;
+        margin: 0;
+        padding: 0;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        list-style: none;
+    
+        p {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 16px;
+            left: 20px;
+            width: 80px;
+            height: 24px;
+            text-align: left;
+            font: Bold 16px/24px Noto Sans CJK TC;
+            letter-spacing: 0;
+            color: #000000;
+            opacity: 1;
+        };
+    
+    };
+
+    .county {
+        border-top: 1px solid #000000;
+    };
+
+};
+
+.summary {
+    position: absolute;
+    top: 195px;
+    left: 0px;
+
+    .now-county {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 0px;
+        left: 85px;
+        width: 108px;
+        height: 54px;
+        text-align: left;
+        font: Bold 36px/54px Noto, Sans, CJK, TC;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    };
+
+    .line {
+        position: absolute;
+        top: 27.5px;
+        left: 205px;
+        width: 786px;
+        height: 0px;
+        border: 3px dashed #000000;
+    };
+
+    p {
+        position: absolute;
+        top: 16px;
+        left: 1163px;
+        margin: 0;
+        padding: 0;
+        width: 32px;
+        height: 24px;
+        text-align: left;
+        font: Bold 16px/24px Noto Sans CJK TC;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    };
+
+    .update-time {
+        position: absolute;
+        top: 16px;
+        left: 1013px;
+        width: 140px;
+        height: 22px;
+        text-align: left;
+        font: Bold 16px/24px Open Sans;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    };
+};
+
+
+.sites {
+    position: absolute;
+    top: 281px;
+    left: 465px;
+    font-size: 0px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .site {
+        height: 97px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 3px solid #000000;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-right: 30px;
+        margin-bottom: 32px;
+        cursor: pointer;
+    };
+};
+
+.site-name {
+    display: inline-block;
+    top: 0px;
+    width: 190px;
+    height: 100%;
+
+    // 用 inline-block 時 vertical-align 要調成 top
+    vertical-align: top;
+    box-sizing: border-box;
+
+    p {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 54px;
+        text-align: center;
+        font: Bold 36px/54px Noto Sans CJK TC;
+        letter-spacing: 0;
+        color: #000000;
+    };
+};
+
+.aqi {
+    top: 0px;
+    display: inline-block;
+    width: 160px;
+    height: 100%;
+    border-left: 3px solid #000000;
+    box-sizing: border-box;
+
+    p {
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 65px;
+        text-align: center;
+        font: Bold 48px/72px Open Sans;
+        letter-spacing: 0;
+        color: #000000;
+        opacity: 1;
+    };
+}
+
+
+.site-detail {
+    position: absolute;
+    top: 281px;
+    left: 85px;
+    width: 350px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 3px solid #000000;
+    overflow: hidden;
+    // box-sizing: border-box;
+
+    .site-now {
+        font-size: 0px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 97px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-bottom: 3px solid #000000;
+        box-sizing: border-box;
+    };
+
+
+    .pollutant-all {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .pollutant {
+            height: 68px;
+            left: 30px;
+            width: 290px;
+            border-bottom: 1px solid #000000;
+            
+            p {
+                position: absolute;
+                display: block;
+                padding: 0;
+                margin: 0;
+                top: 16px;
+                left: 0px;
+                height: 36px;
+                text-align: left;
+                font: Bold 24px/36px Noto Sans CJK TC;
+                letter-spacing: 0;
+                color: #000000;
+                opacity: 1;
+
+                span {
+                    position: relative;
+                    bottom: 0px;
+                    left: 8px;
+                    height: 22px;
+                    text-align: left;
+                    font: 16px/24px Open, Sans;
+                    letter-spacing: 0;
+                };
+            };
+
+            .pol-data {
+                position: absolute;
+                top: 16px;
+                right: 0px;
+                height: 33px;
+                text-align: right;
+                font: Bold 24px/36px Open Sans;
+                letter-spacing: 0;
+                color: #000000;
+                opacity: 1;
+            };
+        };
+
+        .pollutant-O {
+            margin-top: 14px;
+        };
+        .pollutant-5 {
+            border-bottom: 0px;
+            margin-bottom: 14px;
+        };
+    };
+};

@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>AQI</title>
+    <link rel="icon" href="asset/puff_bear.png">
+    <link rel="stylesheet" href="css/all.css">
+
+</head>
+<body>
+<div class="container">
+    <h3 class="title">空氣品質指標</h3>
+    <p class="title-eng">(AQI)</p>
+    <div class="countys-toggle">
+        <div class="default-county">
+            <p>請選擇地區</p>
+            <span class="tri-top">▲</span>
+            <span class="tri-bot">▼</span>
+        </div>
+        <ul class="countys">
+            <!-- 用 js 生成縣市清單
+            <li class="county">嘉義市</li>
+            <li class="county">臺南市</li>
+            -->
+        </ul>
+    </div>
+
+    <table class="aqi-intro">
+        <tr>
+            <th class="aqi-level aqi-level-0">0～50</th>
+            <th class="aqi-level aqi-level-1">51～100</th>
+            <th class="aqi-level aqi-level-2">101～150</th>
+            <th class="aqi-level aqi-level-3">151～200</th>
+            <th class="aqi-level aqi-level-4">201～300</th>
+            <th class="aqi-level aqi-level-5">301～400</th>
+        </tr>
+        <tr>
+            <td>良好</td>
+            <td>普通</td>
+            <td>對敏感族群<br>不健康</td>
+            <td>對所有族群<br>不健康</td>
+            <td>非常不健康</td>
+            <td>危害</td>
+        </tr>
+    </table>
+    
+
+    <div class="summary">
+        <h3 class="now-county">-</h3>
+        <div class="line"></div>
+        <p class="update-time">-</p>
+        <p>更新</p>
+    </div>
+
+    <div class="site-detail" style="display: none">
+        <div class="site-now">
+            <div class="site-name site-name-now"><p>-</p></div>
+            <div class="aqi aqi-now"><p>-</p></div>
+        </div>
+        <!-- 用 js 生成縣市清單
+        <div class="site-title-now site-name">
+            <p class="site-name-now">-</p>
+            <div class="aqi">
+                <p class="aqi-now">-</p>
+            </div>
+        </div>
+        -->
+        
+        <ul class="pollutant-all">
+            <li class="pollutant pollutant-O">
+                <p class="pol-name">臭氧<span>O3 (ppb)</span></p>
+                <p class="pol-data"></p>
+            </li>
+            <li class="pollutant pollutant-1">
+                <p class="pol-name">懸浮微粒<span>PM10 (μg/m³)</span></p>
+                <p class="pol-data"></p>
+            </li>
+            <li class="pollutant pollutant-2">
+                <p class="pol-name">細懸浮微粒<span>PM2.5 (μg/m³)</span></p>
+                <p class="pol-data"></p>
+            </li>
+            <li class="pollutant pollutant-3">
+                <p class="pol-name">一氧化碳<span>CO (ppm)</span></p>
+                <p class="pol-data"></p>
+            </li>
+            <li class="pollutant pollutant-4">
+                <p class="pol-name">二氧化硫<span>SO2 (ppb)</span></p>
+                <p class="pol-data"></p>
+            </li>
+            <li class="pollutant pollutant-5">
+                <p class="pol-name">二氧化氮<span>NO2 (ppb)</span></p>
+                <p class="pol-data"></p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="sites">
+        <!-- 用 js 生成縣市清單
+        <div class="site">
+            <div class="site-name"><p>前金</p></div>
+            <div class="aqi"><p>156</p></div>
+        </div>
+        -->
+    </div>
+</div>
+
+<script src="jquery-3.4.1.js"></script>
+<script src="app.js"></script>
+    
+</body>
+</html>
