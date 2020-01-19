@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, .container {
   position: relative;
   top: 0px;
@@ -17,7 +18,7 @@ html, body, .container {
   width: 240px;
   height: 59px;
   margin: 0;
-  font: Bold 40px/60px Noto, Sans, CJK, TC;
+  font: Bold 40px/60px Noto, Sans, CJK, TC, 微軟正黑體;
   text-align: left;
   letter-spacing: 0;
   color: #000000;
@@ -31,7 +32,7 @@ html, body, .container {
   height: 59px;
   margin: 0;
   text-align: left;
-  font: Bold 40px/60px Noto, Sans, CJK, TC;
+  font: Bold 40px/60px Noto, Sans, CJK, TC, 微軟正黑體;
   letter-spacing: 0;
   color: #000000;
 }
@@ -56,12 +57,14 @@ html, body, .container {
 
 .aqi-intro th {
   height: 54px;
+  font: Bold 16px/24px Open, Sans, 微軟正黑體;
 }
 
 .aqi-intro td {
   height: 56px;
   text-align: center;
   background: #FFFFFF 0% 0% no-repeat padding-box;
+  font: Bold 16px/24px Noto, Sans, CJK, TC, 微軟正黑體;
 }
 
 .aqi-level-0 {
@@ -106,7 +109,7 @@ html, body, .container {
 
 .countys-toggle .default-county span {
   position: absolute;
-  font-size: 3px;
+  font-size: 10px;
   left: 322px;
 }
 
@@ -139,7 +142,7 @@ html, body, .container {
   width: 80px;
   height: 24px;
   text-align: left;
-  font: Bold 16px/24px Noto Sans CJK TC;
+  font: Bold 16px/24px Noto Sans CJK TC, 微軟正黑體;
   letter-spacing: 0;
   color: #000000;
   opacity: 1;
@@ -164,7 +167,7 @@ html, body, .container {
   width: 108px;
   height: 54px;
   text-align: left;
-  font: Bold 36px/54px Noto, Sans, CJK, TC;
+  font: Bold 36px/54px Noto, Sans, CJK, TC, 微軟正黑體;
   letter-spacing: 0;
   color: #000000;
   opacity: 1;
@@ -188,7 +191,7 @@ html, body, .container {
   width: 32px;
   height: 24px;
   text-align: left;
-  font: Bold 16px/24px Noto Sans CJK TC;
+  font: Bold 16px/24px Noto Sans CJK TC, 微軟正黑體;
   letter-spacing: 0;
   color: #000000;
   opacity: 1;
@@ -201,7 +204,7 @@ html, body, .container {
   width: 140px;
   height: 22px;
   text-align: left;
-  font: Bold 16px/24px Open Sans;
+  font: Bold 16px/24px Open Sans, 微軟正黑體;
   letter-spacing: 0;
   color: #000000;
   opacity: 1;
@@ -251,7 +254,7 @@ html, body, .container {
           transform: translate(-50%, -50%);
   height: 54px;
   text-align: center;
-  font: Bold 36px/54px Noto Sans CJK TC;
+  font: Bold 36px/54px Noto Sans CJK TC, 微軟正黑體;
   letter-spacing: 0;
   color: #000000;
 }
@@ -276,7 +279,7 @@ html, body, .container {
           transform: translate(-50%, -50%);
   height: 65px;
   text-align: center;
-  font: Bold 48px/72px Open Sans;
+  font: Bold 48px/72px Open Sans, 微軟正黑體;
   letter-spacing: 0;
   color: #000000;
   opacity: 1;
@@ -329,7 +332,7 @@ html, body, .container {
   left: 0px;
   height: 36px;
   text-align: left;
-  font: Bold 24px/36px Noto Sans CJK TC;
+  font: Bold 24px/36px Noto Sans CJK TC, 微軟正黑體;
   letter-spacing: 0;
   color: #000000;
   opacity: 1;
@@ -351,7 +354,7 @@ html, body, .container {
   right: 0px;
   height: 33px;
   text-align: right;
-  font: Bold 24px/36px Open Sans;
+  font: Bold 24px/36px Open Sans, 微軟正黑體;
   letter-spacing: 0;
   color: #000000;
   opacity: 1;
