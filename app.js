@@ -1,14 +1,13 @@
 function loadDoc() {
     // 用 瀏覽器內建的 XMLHttpRequest 來串 API 囉
     var xhttp = new XMLHttpRequest();
-
-    // 
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         myFunction(this);
       }
     };
-    xhttp.open("GET", "https://opendata.epa.gov.tw/api/v1/AQI?pageIndex=1/?skip=0&top=1000&format=json&token=46FeJfc6OEiWbzbujr8uhQ", true);
+    xhttp.open("GET", "https://script.google.com/macros/s/AKfycbzS02eqKst3Od3eVETAaPOHHviTXphYZsTM_FqeEtChBy4grQk/exec?url=https://opendata.epa.gov.tw/ws/Data/AQI/?$format=json", true);
+    
     xhttp.send();
 }
 
