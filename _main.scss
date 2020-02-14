@@ -1,15 +1,42 @@
-html, body, .container{
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 1280px;
-    height: 890px;
-    background: #F0F0F0 0% 0% no-repeat padding-box;
-};
-
 * {
     position: relative;
 };
+
+
+html, body, .container, .loadingPage{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: #F0F0F0 0% 0% no-repeat padding-box;
+};
+
+.loadingPage {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 5s;
+    img {
+        margin: 20px;
+        width: 10%;
+        animation: bearRotate 30s both infinite;
+        @keyframes bearRotate {
+            0% {
+                
+                transform: rotate(0deg);
+            }
+            100% {
+                
+                transform: rotate(360deg);
+            };
+        };
+    };
+}
+
+
 
 
 .title {

@@ -4,6 +4,8 @@ function loadDoc() {
     xhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         myFunction(this);
+        console.log('ok');
+        $('.loadingPage').css('top','-100%')
       }
     };
     xhttp.open("GET", "https://script.google.com/macros/s/AKfycbzS02eqKst3Od3eVETAaPOHHviTXphYZsTM_FqeEtChBy4grQk/exec?url=https://opendata.epa.gov.tw/ws/Data/AQI/?$format=json", true);
@@ -17,7 +19,7 @@ function myFunction(xml) {
     data.forEach(function(item){
         var nowSiteStr = item["SiteName"];
         var nowSiteArray = nowSiteStr.split("");
-        console.log(nowSiteArray);
+        // console.log(nowSiteArray);
 
         // 鄉鎮市區只保留 括弧內 的鄉鎮市區名稱
         // 例如：彰化(大城)，則只保留 (大城)
